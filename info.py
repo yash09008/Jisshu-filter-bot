@@ -16,9 +16,9 @@ def is_enabled(value, default):
 
 # Main
 SESSION = environ.get("SESSION", "Media_search")
-API_ID = int(environ.get("API_ID", ""))
-API_HASH = environ.get("API_HASH", "")
-BOT_TOKEN = environ.get("BOT_TOKEN", "")
+API_ID = int(environ.get("API_ID", "30121899"))
+API_HASH = environ.get("API_HASH", "d43eb6418b1a9a92fb658130394b0f8d")
+BOT_TOKEN = environ.get("BOT_TOKEN", "8407847011:AAFvWe7hjDYwjJwnVXOL1dfB45hqk0fQMTE")
 PORT = environ.get("PORT", "8082")
 
 # Owners
@@ -27,9 +27,9 @@ ADMINS = [
     for admin in environ.get("ADMINS", "5672857559").split()
 ]
 OWNER_USERNAME = environ.get(
-    "OWNER_USERNAME", "IM_JISSHU"
+    "OWNER_USERNAME", "Call_me_professor_always"
 )  # without @ or https://t.me/
-USERNAME = environ.get("USERNAME", "")  # ADMIN USERNAME
+USERNAME = environ.get("USERNAME", "call_me_professor_always")  # ADMIN USERNAME
 
 # Database Channel
 CHANNELS = [
@@ -40,12 +40,12 @@ CHANNELS = [
 # ForceSub Channel & Log Channels
 AUTH_CHANNEL = int(environ.get("AUTH_CHANNEL", ""))
 AUTH_REQ_CHANNEL = int(environ.get("AUTH_REQ_CHANNEL", ""))
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", ""))
-LOG_API_CHANNEL = int(environ.get("LOG_API_CHANNEL", ""))
-LOG_VR_CHANNEL = int(environ.get("LOG_VR_CHANNEL", ""))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1003636205044"))
+LOG_API_CHANNEL = int(environ.get("LOG_API_CHANNEL", "-1003636205044"))
+LOG_VR_CHANNEL = int(environ.get("LOG_VR_CHANNEL", "-1003674096367"))
 
 # MongoDB
-DATABASE_URI = environ.get("DATABASE_URI", "")
+DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://dadkeyashwant_db_user:zsOZvgkRTCs0XSP8@cluster0.2yip7cl.mongodb.net/?appName=Cluster0")
 DATABASE_NAME = environ.get("DATABASE_NAME", "Cluster0")
 
 # Files index database url
